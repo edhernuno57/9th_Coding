@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding &lt;ol&gt; and &lt;li&gt; Tags</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        ol {
+            margin: 20px 0;
+            padding-left: 40px;
+        }
+
+        .example {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #333;
+            margin: 10px 0;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding &lt;ol&gt; and &lt;li&gt; Tags</h1>
+
+    <p>The <code>&lt;ol&gt;</code> tag in HTML is used to create an ordered list, where each item is automatically numbered. The <code>&lt;li&gt;</code> tag is used to define each list item within the ordered list.</p>
+
+    <h2>Basic Example</h2>
+
+    <p>Here’s an example of an ordered list with three items:</p>
+
+    <h3>Input HTML Code:</h3>
+    <code>
+        &lt;ol&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Third item&lt;/li&gt;<br>
+        &lt;/ol&gt;
+    </code>
+
+    <h3>Output:</h3>
+    <div class="example">
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+    </div>
+
+    <p>In the example above, the <code>&lt;ol&gt;</code> tag creates the ordered list, and each item is defined by the <code>&lt;li&gt;</code> tag. The items are automatically numbered 1, 2, 3, and so on.</p>
+
+    <h2>Customizing the List</h2>
+
+    <p>You can customize the type of numbering used in an ordered list by using the <code>type</code> attribute in the <code>&lt;ol&gt;</code> tag. Here are some examples:</p>
+
+    <h3>Input HTML Code:</h3>
+    <code>
+        &lt;ol type=&quot;1&quot;&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Numbered with digits (1, 2, 3...)&lt;/li&gt;<br>
+        &lt;/ol&gt;<br><br>
+
+        &lt;ol type=&quot;A&quot;&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Numbered with uppercase letters (A, B, C...)&lt;/li&gt;<br>
+        &lt;/ol&gt;<br><br>
+
+        &lt;ol type=&quot;a&quot;&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Numbered with lowercase letters (a, b, c...)&lt;/li&gt;<br>
+        &lt;/ol&gt;<br><br>
+
+        &lt;ol type=&quot;I&quot;&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Numbered with uppercase Roman numerals (I, II, III...)&lt;/li&gt;<br>
+        &lt;/ol&gt;<br><br>
+
+        &lt;ol type=&quot;i&quot;&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Numbered with lowercase Roman numerals (i, ii, iii...)&lt;/li&gt;<br>
+        &lt;/ol&gt;
+    </code>
+
+    <h3>Output:</h3>
+    <div class="example">
+        <ol type="1">
+            <li>Numbered with digits (1, 2, 3...)</li>
+        </ol>
+        <ol type="A">
+            <li>Numbered with uppercase letters (A, B, C...)</li>
+        </ol>
+        <ol type="a">
+            <li>Numbered with lowercase letters (a, b, c...)</li>
+        </ol>
+        <ol type="I">
+            <li>Numbered with uppercase Roman numerals (I, II, III...)</li>
+        </ol>
+        <ol type="i">
+            <li>Numbered with lowercase Roman numerals (i, ii, iii...)</li>
+        </ol>
+    </div>
+
+    <p>By using the <code>type</code> attribute, you can change the numbering style to digits, letters, or Roman numerals, depending on your needs.</p>
+
+    <h2>Conclusion</h2>
+
+    <p>The <code>&lt;ol&gt;</code> and <code>&lt;li&gt;</code> tags are essential for creating ordered lists in HTML. Whether you're listing steps in a process, creating a numbered list of items, or organizing information, these tags help you structure your content in a clear and logical way.</p>
+
+</body>
+</html>
