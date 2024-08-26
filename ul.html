@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding &lt;ul&gt; and &lt;li&gt; Tags</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin: 20px 0;
+            padding-left: 40px;
+        }
+
+        .example {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #333;
+            margin: 10px 0;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding &lt;ul&gt; and &lt;li&gt; Tags</h1>
+
+    <p>The <code>&lt;ul&gt;</code> tag in HTML is used to create an unordered list, where each item is marked with a bullet point. The <code>&lt;li&gt;</code> tag is used to define each list item within the unordered list.</p>
+
+    <h2>Basic Example</h2>
+
+    <p>Here’s an example of an unordered list with three items:</p>
+
+    <h3>Input HTML Code:</h3>
+    <code>
+        &lt;ul&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Third item&lt;/li&gt;<br>
+        &lt;/ul&gt;
+    </code>
+
+    <h3>Output:</h3>
+    <div class="example">
+        <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+    </div>
+
+    <p>In the example above, the <code>&lt;ul&gt;</code> tag creates the unordered list, and each item is defined by the <code>&lt;li&gt;</code> tag. The items are automatically marked with bullet points.</p>
+
+    <h2>Customizing the List</h2>
+
+    <p>You can customize the style of the bullet points in an unordered list by using the <code>type</code> attribute in the <code>&lt;ul&gt;</code> tag. Here are some examples:</p>
+
+    <h3>Input HTML Code:</h3>
+    <code>
+        &lt;ul type=&quot;disc&quot;&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Bulleted with discs (default)&lt;/li&gt;<br>
+        &lt;/ul&gt;<br><br>
+
+        &lt;ul type=&quot;circle&quot;&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Bulleted with circles&lt;/li&gt;<br>
+        &lt;/ul&gt;<br><br>
+
+        &lt;ul type=&quot;square&quot;&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Bulleted with squares&lt;/li&gt;<br>
+        &lt;/ul&gt;
+    </code>
+
+    <h3>Output:</h3>
+    <div class="example">
+        <ul style="list-style-type: disc;">
+            <li>Bulleted with discs (default)</li>
+        </ul>
+        <ul style="list-style-type: circle;">
+            <li>Bulleted with circles</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>Bulleted with squares</li>
+        </ul>
+    </div>
+
+    <p>By using the <code>list-style-type</code> CSS property, you can change the bullet style to discs, circles, or squares.</p>
+
+  
+</body>
+</html>
