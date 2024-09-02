@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding the &lt;img&gt; Tag</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .example {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #333;
+            margin: 10px 0;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding the &lt;img&gt; Tag</h1>
+
+    <p>The `<img>` tag in HTML is used to embed images in a webpage. It is a self-closing tag, meaning it does not require a closing tag. The `<img>` tag has several important attributes that you should know about:</p>
+
+    <h2>The `src` Attribute</h2>
+    <p>The `src` (source) attribute is used to specify the path to the image you want to display. This can be a relative path (if the image is stored in the same directory as your HTML file) or an absolute path (a full URL to an image hosted online).</p>
+    <h3>Example:</h3>
+    <code>&lt;img src="image.jpg" alt="A beautiful scenery"&gt;</code>
+    <div class="example">
+        <img src="https://via.placeholder.com/150" alt="A placeholder image">
+    </div>
+
+    <h2>The `alt` Attribute</h2>
+    <p>The `alt` (alternative text) attribute is used to provide a text description of the image. This text is displayed if the image cannot be loaded and is also used by screen readers for accessibility purposes.</p>
+    <h3>Example:</h3>
+    <code>&lt;img src="image.webp" alt="A beautiful scenery"&gt;</code>
+    <div class="example">
+        <img src="https://via.placeholder.com/150" alt="A placeholder image">
+    </div>
+
+    <h2>The `width` and `height` Attributes</h2>
+    <p>The `width` and `height` attributes are used to specify the dimensions of the image in pixels. You can use these attributes to resize the image to fit your webpage layout.</p>
+    <h3>Example:</h3>
+    <code>&lt;img src="image.jpg" alt="A beautiful scenery" width="200" height="100"&gt;</code>
+    <div class="example">
+        <img src="https://via.placeholder.com/150" alt="A placeholder image" width="200" height="100">
+    </div>
+
+    <h2>Combining Attributes</h2>
+    <p>You can combine these attributes to fully customize how the image is displayed on your webpage.</p>
+    <h3>Example:</h3>
+    <code>&lt;img src="image.jpg" alt="A beautiful scenery" width="300" height="200"&gt;</code>
+    <div class="example">
+        <img src="https://via.placeholder.com/150" alt="A placeholder image" width="300" height="200">
+    </div>
+
+    <h2>Conclusion</h2>
+    <p>The `<img>` tag is a fundamental element in HTML for embedding images into your web pages. By using the `src`, `alt`, `width`, and `height` attributes, you can control how images are displayed and ensure that your website is accessible to all users.</p>
+
+</body>
+</html>
